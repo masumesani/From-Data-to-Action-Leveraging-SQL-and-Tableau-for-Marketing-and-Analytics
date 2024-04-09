@@ -12,6 +12,7 @@
 - [Approach](#approach)
 - [Status](#status)
 - [Credits](#credits)
+- [Disclaimer](#Disclaimer)
 ## About <a name = "about"></a>
 Unveiling the Story: SQL & Tableau for Effective Business Analysis & Data Management. <br/>
 
@@ -88,5 +89,18 @@ The next steps will involve:
 **Refining and iterating:** As we progress, we may need to revisit previous steps to refine our analysis or data preparation based on new insights.<br/>
 We'll keep this section updated to reflect the project's progress as we move forward.
 ## Credits <a name="credits"></a>
-This project is built upon the foundation of knowledge acquired through the highly-rated Udemy course, [SQL - MySQL for Data Analytics and Business Intelligence](https://www.udemy.com/course/sql-mysql-for-data-analytics-and-business-intelligence/?couponCode=ST8MT40924) offered by [365 Careers](https://365datascience.com/) .<br/>
-Course is availbe on [Udemy Platform](https://www.udemy.com/)
+- This project is built upon the foundation of knowledge acquired through the highly-rated Udemy course, [SQL - MySQL for Data Analytics and Business Intelligence](https://www.udemy.com/course/sql-mysql-for-data-analytics-and-business-intelligence/?couponCode=ST8MT40924) offered by [365 Careers](https://365datascience.com/) . Course is availbe on [Udemy Platform](https://www.udemy.com/)
+
+- Copyright (C) 2007,2008, MySQL AB
+-  Original data created by Fusheng Wang and Carlo Zaniolo
+-  http://www.cs.aau.dk/TimeCenter/software.htm
+-  http://www.cs.aau.dk/TimeCenter/Data/employeeTemporalDataSet.zip
+
+-  Current schema by Giuseppe Maxia 
+-  Data conversion from XML to relational by Patrick Crews
+
+- This work is licensed under the  Creative Commons Attribution-Share Alike 3.0 Unported License. 
+- To view a copy of this license, visit  http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+##  Disclaimer <a name="Disclaimer"></a>
+To the best of our knowledge, this data is fabricated, and it does not correspond to real people. Any similarity to existing people is purely coincidental.
+
