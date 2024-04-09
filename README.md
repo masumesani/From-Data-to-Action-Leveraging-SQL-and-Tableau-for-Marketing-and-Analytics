@@ -72,7 +72,7 @@ By setting up these tools and establishing the connections, you'll be ready to l
 ## Approach  <a name = "approach"></a>
 To bring data to life and implement an effective, actionable insight following steps of data science methodology were taken: 
 ```mermaid
-graph LR;
+graph TB;
     id1(Business Understanding)-->id2(Data Exploration and Preparation);
     id2-->id3(Data Representation and Transformation);
     id3-->id4(Data Visualization and Presentation);
