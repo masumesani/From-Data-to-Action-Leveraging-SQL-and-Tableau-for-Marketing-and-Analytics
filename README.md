@@ -15,7 +15,7 @@
 - [Disclaimer](#Disclaimer)
 ## About <a name = "about"></a>
 Unveiling the Story: SQL & Tableau for Effective Business Analysis & Data Management. <br/>
-
+Merge coding skills and business acumen to solve complex analytical problems.
 ## Demo <a name="demo"></a>
 
 ## Business Understanding <a name= "workflow"></a>
