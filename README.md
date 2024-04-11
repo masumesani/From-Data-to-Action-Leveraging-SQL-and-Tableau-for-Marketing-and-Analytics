@@ -28,7 +28,11 @@ Merge coding skills and business acumen to solve complex analytical problems.
 ## Screenshot of Visualization/Result <a name="screenshot"></a>
 **In Progress**<br/>
 ## 🗄️ Database Model Diagram <a name ="database"></a>
-**In Progress**<br/>
+Check out the DB Model Diagram [here](https://dbdiagram.io/d/Employees-6617bcb803593b6b61c01ea1)
+![Employees](https://github.com/masumesani/From-Data-to-Action-Leveraging-SQL-and-Tableau-for-Marketing-and-Analytics/assets/31848828/729daab0-f34d-4b68-a895-da7429c7faa4)
+
+
+
 ## Technologies <a name = "techs"></a>
 
 This project leverages a powerful combination of technologies to extract insights from data and present them in a visually compelling way.
