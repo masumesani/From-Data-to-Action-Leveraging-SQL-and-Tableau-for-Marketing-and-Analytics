@@ -15,13 +15,23 @@
 - [Disclaimer](#Disclaimer)
 ## About <a name = "about"></a>
 Unveiling the Story: SQL & Tableau for Effective Business Analysis & Data Management. <br/>
-Merge coding skills and business acumen to solve complex analytical problems.
+Merge coding skills and business acumen to solve complex analytical problems.</br>
+What we do is as following: </br>
+- Recive a business task
+- Use Sql to execute a query retriving a relevant dataset from database
+- Export the newly obtained data in a csv file to used in Tableau
+- Create a professinal and understandable visualization in Tableau that respand to the business task wich help end user to come up with business insight
+- How I do that?
+  1. Data exploration and data validation
+  2. Union data
+  3. Use Mysql stored procedures
+  4. Reorganizing data
+  5. Visualization
 ## Demo <a name="demo"></a>
 
 ## Business Understanding <a name= "workflow"></a>
 **In Progress**<br/>
->[!NOTE]
->
+
 
 ## Data Understanding <a name="data_undestanding"></a>
 **In Progress**<br/>
@@ -73,7 +83,8 @@ Here are some additional options for using Tableau:
 **Connecting Tableau to MySQL:** Tableau allows you to connect directly to your MySQL database. You'll need to provide the same connection details used for your SQL client, allowing Tableau to access and visualize the data stored within MySQL.
 
 By setting up these tools and establishing the connections, you'll be ready to leverage the power of SQL for data exploration, MySQL for data storage, and Tableau for creating impactful data visualizations!
-
+>[!NOTE]
+> Leveraging open-source and accessible software, we opted for MySQL and Tableau Public. Alternatively, for those with the expertise, custom SQL can offer greater speed and efficiency.
 ## Approach  <a name = "approach"></a>
 To bring data to life and implement an effective, actionable insight following steps of data science methodology were taken: 
 ```mermaid
