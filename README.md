@@ -31,7 +31,8 @@ What we do is as following: </br>
 
 ## Business Understanding <a name= "workflow"></a>
 **In Progress**<br/>
-
+>[!NOTE]
+> For more information about detailed steps and phase please check project documentation [here]()
 
 ## Data Understanding <a name="data_undestanding"></a>
 **In Progress**<br/>
