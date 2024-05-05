@@ -67,8 +67,34 @@ Welcome to this [interactive dashboard](https://public.tableau.com/views/HumanRe
 2. **Drill Down:** Explore details behind the visualizations for granular analysis.
 3. **Compare:** juxtapose metrics to identify trends and patterns.
 
-## Business Understanding <a name= "workflow"></a>
-**In Progress**<br/>
+## Business Understanding <a name= "workflow"></a> 
+In today's dynamic business landscape, organizations recognize the pivotal role of workforce management in driving operational efficiency and achieving strategic objectives. The business understanding section elucidates the significance of leveraging employee data to inform decision-making and optimize human capital management practices.</br>
+
+### Organizational Context
+Our organization operates in a competitive industry where talent retention, skill development, and departmental efficacy are critical for sustained growth and innovation. Understanding the nuances of employee demographics, tenure patterns, and career trajectories is essential for fostering a productive and engaged workforce.</br>
+
+### Objectives of Data Analysis
+The primary objectives of analyzing the employee database are as follows:</br>
+
+- **Strategic Workforce Planning:** Gain insights into workforce demographics and trends to facilitate strategic resource allocation and succession planning.
+- **Optimized Talent Management:** Identify factors influencing employee retention, job satisfaction, and career progression to implement targeted talent management initiatives.
+- **Enhanced Departmental Effectiveness:** Analyze departmental dynamics, managerial transitions, and team compositions to optimize operational efficiency and leadership effectiveness.
+- **Data-Driven Decision-Making:** Empower stakeholders with actionable insights derived from data analysis to support evidence-based decision-making and organizational strategy formulation.
+### Business Questions to Address
+To achieve the aforementioned objectives, we will explore key business questions through data analysis:
+
+1. What are the demographic characteristics of our workforce, and how do they vary across departments?
+2. What are the patterns of employee tenure and turnover, and what factors contribute to retention?
+3. How does job satisfaction correlate with career progression and salary changes over time?
+4. What are the managerial dynamics within departments, and how do leadership transitions impact team performance?
+### Value Proposition
+By leveraging data-driven insights from the employee database, our organization aims to:
+
+- Enhance employee engagement and satisfaction through targeted HR interventions.
+- Optimize resource allocation and talent deployment based on departmental needs and skill requirements.
+- Foster a culture of continuous improvement by leveraging data to inform leadership decisions and organizational strategies.
+### Conclusion
+Understanding and harnessing the power of employee data is instrumental in shaping a resilient and adaptive organization. Through this analysis, we aspire to unlock the full potential of our workforce, drive strategic initiatives, and achieve sustainable growth in a competitive market environment.
 >[!NOTE]
 > For more information about detailed steps and phase please check project documentation [here]()
 
@@ -79,41 +105,61 @@ The dataset encapsulates the core aspects of **employee lifecycle management, fr
 
 This document outlines the structure of the database, key relationships between tables, challenges encountered during data analysis, and the focus areas of exploration. Through this analysis, I seek to gain actionable insights that can inform **organizational strategies, enhance workforce planning, and optimize employee engagement initiatives.**
 ### Tables Overview
--**departments** (9 rows, 2 columns): Stores basic department information (department number and name).</br>
+- **departments** (9 rows, 2 columns): Stores basic department information (department number and name).</br>
 - **dept_emp** (331,143 rows, 4 columns):Links employees to departments, capturing assignment periods (employee number, department number, start date, end date). This table plays a crucial role in understanding employee history within departments.</br>
-dept_manager (24 rows, 4 columns):
-Tracks historical information about departmental managers (employee number, department number, start date, end date).
-employees (299,025 rows, 6 columns):
-Stores core employee information (unique employee ID, birth date, name, gender, hire date).
-salaries (965,756 rows, 4 columns):
-Maintains a history of employee salaries (employee number, salary amount, start date, end date).
-titles (441,594 rows, 4 columns):
-Tracks employee job titles over time (employee number, job title, start date, end date).
-Key Relationships
+- **dept_manager** (24 rows, 4 columns):Tracks historical information about departmental managers (employee number, department number, start date, end date).</br>
+- **employees** (299,025 rows, 6 columns): Stores core employee information (unique employee ID, birth date, name, gender, hire date).</br>
+- **salaries** (965,756 rows, 4 columns): Maintains a history of employee salaries (employee number, salary amount, start date, end date).</br>
+- **titles** (441,594 rows, 4 columns): Tracks employee job titles over time (employee number, job title, start date, end date). </br>
+### Key Relationships
 The key relationship lies in the dept_emp table (with over 331,000 entries), where a single employee might have multiple rows reflecting assignments to different departments throughout their employment.
 
-Data Quality
+ ### Data Quality
 While we didn't encounter missing values in the traditional sense, the structure of the dept_emp table presented a challenge:
 
-Multiple Department Assignments: Employees can have multiple rows in dept_emp with different departments (over 331,000 entries indicate a potentially dynamic workforce with departmental changes).
-Addressing Department Assignments
-To accurately retrieve employee information considering their departmental history, we employed calculated nested queries. These queries navigated the dept_emp table, considering start and end dates of assignments to ensure we captured the correct departmental affiliation for each employee at a specific point in time.
+**Multiple Department Assignments:** Employees can have multiple rows in dept_emp with different departments (over 331,000 entries indicate a potentially dynamic workforce with departmental changes).</br>
+**Addressing Department Assignments** To accurately retrieve employee information considering their departmental history, I employed calculated nested queries. These queries navigated the dept_emp table, considering start and end dates of assignments to ensure we captured the correct departmental affiliation for each employee at a specific point in time.
 
-Data Exploration and Analysis Focus
-This project focuses on analyzing employee demographics, particularly regarding department assignments. We will leverage the employees, dept_emp, and potentially other relevant tables to explore:
+### Data Exploration and Analysis Focus
+This project focuses on analyzing employee demographics, particularly regarding department assignments. I will leverage the employees, dept_emp, and potentially other relevant tables to explore:
 
-Overall gender distribution within the workforce.
-Departmental distribution of genders, considering the dynamic nature of assignments as reflected in the dept_emp table (over 331,000 entries).
-Potential trends in departmental changes over time (considering dept_emp start and end dates).
-Exporting Data for Visualization (Optional)
-Following our analysis using SQL, we can export the results to formats suitable for visualization in tools like Tableau. Common export formats include CSV (comma-separated values) and Excel spreadsheets.
+1. Overall gender distribution within the workforce.
+2. Departmental distribution of genders, considering the dynamic nature of assignments as reflected in the dept_emp table (over 331,000 entries).
+3. Potential trends in departmental changes over time (considering dept_emp start and end dates).</br>
+### Overview of Potential Data Explorations
+Exploring the dataset beyond demographic analysis offers a comprehensive view of employee management and organizational dynamics. This section outlines various potential data explorations aimed at extracting valuable insights from the dataset.
 
+1. **Employee Tenure Analysis** </br>
+**Objective:** Understand employee retention and tenure patterns.</br>
+**Steps:** Calculate tenure distribution, analyze turnover trends, and identify departments with varying average tenures.
+2. **Salary Trends and Analysis**</br>
+**Objective:** Examine salary distribution and changes over time.</br>
+**Steps:** Visualize salary variations across departments and job titles, explore salary trends, and identify areas with significant disparities.</br>
+3. **Managerial Analysis**</br>
+**Objective:** Understand managerial dynamics and performance.</br>
+**Steps:** Analyze managerial changes, assess their impact on departmental performance, and identify stability in managerial roles.</br>
+4. **Employee Promotion Patterns**</br>
+**Objective:** Investigate promotion practices and career progression.</br>
+**Steps:** Identify common career paths, analyze promotion frequencies across departments, and assess promotion rates in specific roles.</br>
+5. **Deeper Employee Demographics by Department**</br>
+**Objective:** Explore demographic characteristics within departments.</br>
+**Steps:** Visualize gender and age demographics, analyze diversity metrics, and identify workforce compositions.</br>
+6. **Performance and Productivity Analysis**</br>
+**Objective:** Assess employee performance and productivity.</br>
+**Steps:** Utilize performance metrics to analyze productivity, correlate tenure with job roles, and identify high-performing departments.</br>
+7. **Temporal Analysis of Job Titles**</br>
+**Objective:** Track job title changes and role evolution.</br>
+**Steps:** Visualize job title frequencies over time, identify emerging roles, and analyze their correlation with employee tenure.</br>
+8. **Cross-Tabulation and Correlation Analysis**</br>
+**Objective:** Identify relationships between variables.</br>
+**Steps:** Conduct cross-tabulations, calculate correlations, and use statistical techniques to uncover patterns and dependencies.</br>
+### Leveraging Data Tools for Analysis
+To execute these explorations effectively, leverage SQL queries, data visualization tools, and statistical techniques. By applying these methods, actionable insights can be derived to inform strategic decision-making and enhance organizational effectiveness.</br>
 
-
+Explore these data avenues based on project objectives and organizational goals to extract maximum value and deepen understanding of employee behavior and organizational dynamics.</br>
 
 
 ## Screenshots of Code, Visualization and Result <a name="screenshot"></a>
-
 
 ![Human Resources Dashboard](https://github.com/masumesani/From-Data-to-Action-Leveraging-SQL-and-Tableau-for-Marketing-and-Analytics/assets/31848828/0466661c-560b-4b9a-930f-eb6e2c1eb96f) </br>
 
