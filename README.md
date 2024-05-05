@@ -73,7 +73,45 @@ Welcome to this [interactive dashboard](https://public.tableau.com/views/HumanRe
 > For more information about detailed steps and phase please check project documentation [here]()
 
 ## Data Understanding <a name="data_undestanding"></a>
-**In Progress**<br/>
+Understanding the intricacies of employee data within an organization is crucial for strategic decision-making, workforce management, and fostering a productive work environment. This data understanding document delves into a comprehensive analysis of a relational database containing employee information, departmental assignments, and historical records of job titles and salaries.</br>
+
+The dataset encapsulates the core aspects of **employee lifecycle management, from recruitment to departmental affiliations, managerial transitions, and career progression**. By exploring this dataset, we aim to **uncover valuable insights into employee demographics, organizational dynamics, and patterns of employee engagement.** </br>
+
+This document outlines the structure of the database, key relationships between tables, challenges encountered during data analysis, and the focus areas of exploration. Through this analysis, I seek to gain actionable insights that can inform **organizational strategies, enhance workforce planning, and optimize employee engagement initiatives.**
+### Tables Overview
+-**departments** (9 rows, 2 columns): Stores basic department information (department number and name).</br>
+- **dept_emp** (331,143 rows, 4 columns):Links employees to departments, capturing assignment periods (employee number, department number, start date, end date). This table plays a crucial role in understanding employee history within departments.</br>
+dept_manager (24 rows, 4 columns):
+Tracks historical information about departmental managers (employee number, department number, start date, end date).
+employees (299,025 rows, 6 columns):
+Stores core employee information (unique employee ID, birth date, name, gender, hire date).
+salaries (965,756 rows, 4 columns):
+Maintains a history of employee salaries (employee number, salary amount, start date, end date).
+titles (441,594 rows, 4 columns):
+Tracks employee job titles over time (employee number, job title, start date, end date).
+Key Relationships
+The key relationship lies in the dept_emp table (with over 331,000 entries), where a single employee might have multiple rows reflecting assignments to different departments throughout their employment.
+
+Data Quality
+While we didn't encounter missing values in the traditional sense, the structure of the dept_emp table presented a challenge:
+
+Multiple Department Assignments: Employees can have multiple rows in dept_emp with different departments (over 331,000 entries indicate a potentially dynamic workforce with departmental changes).
+Addressing Department Assignments
+To accurately retrieve employee information considering their departmental history, we employed calculated nested queries. These queries navigated the dept_emp table, considering start and end dates of assignments to ensure we captured the correct departmental affiliation for each employee at a specific point in time.
+
+Data Exploration and Analysis Focus
+This project focuses on analyzing employee demographics, particularly regarding department assignments. We will leverage the employees, dept_emp, and potentially other relevant tables to explore:
+
+Overall gender distribution within the workforce.
+Departmental distribution of genders, considering the dynamic nature of assignments as reflected in the dept_emp table (over 331,000 entries).
+Potential trends in departmental changes over time (considering dept_emp start and end dates).
+Exporting Data for Visualization (Optional)
+Following our analysis using SQL, we can export the results to formats suitable for visualization in tools like Tableau. Common export formats include CSV (comma-separated values) and Excel spreadsheets.
+
+
+
+
+
 ## Screenshots of Code, Visualization and Result <a name="screenshot"></a>
 
 
