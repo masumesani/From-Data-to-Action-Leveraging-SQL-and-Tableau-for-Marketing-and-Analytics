@@ -14,20 +14,58 @@
 - [Credits](#credits)
 - [Disclaimer](#Disclaimer)
 ## About <a name = "about"></a>
-Unveiling the Story: SQL & Tableau for Effective Business Analysis & Data Management. <br/>
-Merge coding skills and business acumen to solve complex analytical problems.</br>
-What we do is as following: </br>
-- Recive a business task
-- Use Sql to execute a query retriving a relevant dataset from database
-- Export the newly obtained data in a csv file to used in Tableau
-- Create a professinal and understandable visualization in Tableau that respand to the business task wich help end user to come up with business insight
+### Unveiling the Story: SQL & Tableau for Effective Business Analysis & Data Management. <br/>
+Merge coding skills and business acumen to solve complex analytical problems. This project explores the gender composition of a company's workforce, leveraging the power of SQL and Tableau for data analysis and visualization.</br>
+- What I do are as following: </br>
+1. Recive a business task
+2. Use Sql to execute a query retriving a relevant dataset from database
+3. Export the newly obtained data in a csv file to used in Tableau
+4. Create a professinal and understandable visualization in Tableau that respand to the business task wich help end user to come up with business insight
 - How I do that?
-  1. Data exploration and data validation
+1. Data exploration and data validation
   2. Union data
   3. Use Mysql stored procedures
   4. Reorganizing data
-  5. Visualization
+  5. Visualization </br>
+### Technical Approach:
+#### Data Sources:
+I utilized two database management systems for this project:</br>
+- **MySQL:** Potentially used to store the raw employee and department data.</br>
+- **SQL Server:** Potentially used for data manipulation, analysis, and potentially storing the final dataset.</br>
+#### Data Manipulation and Analysis:
+I employed SQL (Structured Query Language) to:</br>
+- **Define functions:** Reusable blocks of code performing specific calculations relevant to gender,role demographics (e.g., calculating average salary by gender, role, title ,...).</br>
+- **Create procedures:** Stored routines encapsulating complex calculations or data transformations frequently used in the analysis (e.g., a procedure to calculate gender staffing breakdown across departments).</br>
+- **Run queries:** Execute specific commands to extract and analyze workforce data. This could involve filtering by department, year, or gender, calculating ratios and averages, and joining tables for a comprehensive view.</br>
+The final processed data containing insights like gender staffing breakdown, earning ratios, and management representation was exported for visualization.
+#### Data Visualization:
+Tableau, a powerful data visualization tool, was used to create interactive dashboards.</br>
+The exported data was connected to Tableau, allowing for the creation of charts, graphs, and other visual representations of workforce demographics.</br>
+- **Benefits:**</br>
+**Improved Data Understanding:** By leveraging SQL functions, procedures, and targeted queries, we were able to transform raw data into meaningful insights.</br>
+**Interactive Exploration:** Tableau empowers users to explore workforce data dynamically, fostering deeper understanding and data-driven decision making.</br>
+**Transparency and Communication:** The interactive dashboards provide clear visualizations, promoting transparency around workforce demographics for stakeholders.
+>[!NOTE]
+>This project demonstrates the valuable synergy between SQL for data manipulation and Tableau for interactive visualization, enabling us to paint a clear picture of the company's workforce composition.
+
 ## Demo <a name="demo"></a>
+**Let's unlock valuable insights into the workforce and work towards a more inclusive and equitable future.** </br>
+
+Welcome to this [interactive dashboard](https://public.tableau.com/views/HumanResourceDashboard_17138904446890/HumanResourcesDashboard?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link) exploring the composition of workforce . This visualization, built using Tableau, delves into key metrics like gender staffing breakdown, earning ratios across genders and years, departmental distribution, and representation in leadership positions.</br>
+- Key Insights at a Glance:
+
+1. **Gender Composition:** Gain a clear picture of the overall gender balance within the company and across departments.
+2. **Earnings Parity:** Explore trends in gender pay equity over time to identify potential areas for improvement.
+3. **Departmental Representation:** See how genders are distributed across different departments within the organization.
+4. **Management Roles:** Analyze the proportion of women and men in leadership positions. </br>
+
+**Interactive Exploration:**
+
+- This dashboard empowers you to:
+
+1. **Filter:** Focus on specific departments or years to gain deeper insights.
+2. **Drill Down:** Explore details behind the visualizations for granular analysis.
+3. **Compare:** juxtapose metrics to identify trends and patterns.
 
 ## Business Understanding <a name= "workflow"></a>
 **In Progress**<br/>
@@ -36,8 +74,15 @@ What we do is as following: </br>
 
 ## Data Understanding <a name="data_undestanding"></a>
 **In Progress**<br/>
-## Screenshot of Visualization/Result <a name="screenshot"></a>
-**In Progress**<br/>
+## Screenshots of Code, Visualization and Result <a name="screenshot"></a>
+
+
+![Human Resources Dashboard](https://github.com/masumesani/From-Data-to-Action-Leveraging-SQL-and-Tableau-for-Marketing-and-Analytics/assets/31848828/0466661c-560b-4b9a-930f-eb6e2c1eb96f) </br>
+
+![Gender Equality](https://github.com/masumesani/From-Data-to-Action-Leveraging-SQL-and-Tableau-for-Marketing-and-Analytics/assets/31848828/9c6825e9-9592-4a9d-9da9-712e5cdab9ec) </br>
+
+![Employee salary vs average salary department sql procedure screenshot](https://github.com/masumesani/From-Data-to-Action-Leveraging-SQL-and-Tableau-for-Marketing-and-Analytics/assets/31848828/2aa45d5b-6731-4b7d-a676-0bb5bb8fdac8)
+
 ## 🗄️ Database Model Diagram <a name ="database"></a>
 Check out the DB Model Diagram [here](https://dbdiagram.io/d/Employees-6617bcb803593b6b61c01ea1)
 ![Employees](https://github.com/masumesani/From-Data-to-Action-Leveraging-SQL-and-Tableau-for-Marketing-and-Analytics/assets/31848828/729daab0-f34d-4b68-a895-da7429c7faa4)
